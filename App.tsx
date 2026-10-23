@@ -40,7 +40,7 @@ export default function App() {
           <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias error iste veritatis, at eos, facere maiores iusto aperiam, mollitia odio ea obcaecati aliquam! Voluptatibus quisquam possimus accusantium eveniet aliquid.</Text>
         </View>
 
-        <View>
+        <View style={styles.player}>
           <YoutubeIframe 
           videoId = "cu71GJlMHzY"
           height = {video_height}
@@ -73,6 +73,12 @@ const styles = StyleSheet.create({
     height:300,
     width: 300,
     borderRadius:200,
+
+  },
+  player:{
+    width:'100%',
+    justifyContent: 'center',
+    marginTop: 48,
 
   },
 
